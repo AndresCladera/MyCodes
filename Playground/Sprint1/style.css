@@ -1,0 +1,92 @@
+nav {
+
+    display: flex;
+    width: 100%;
+    background-color: rgb(84, 170, 199);
+    padding: 2px;
+    justify-content: space-around;
+    margin: 0px;
+    height: 30px;
+}
+
+nav a{
+    color: rgb(2, 2, 143)ck;
+    background-color:   rgb(84, 170, 199);
+    text-decoration-line: none;
+    text-align: center;
+    line-height: 30px;
+    font-size: larger;
+}
+
+#container{
+
+    background-color: rgb(84, 170, 199);
+}
+
+#logo{
+    margin: 20px;
+    
+}
+
+#PF{
+    font-size: xx-large;
+    background-color:rgb(80, 127, 255);
+    text-align:center;
+    color: white;
+    margin: 20px;
+
+}
+
+
+.suscribe {
+
+    background-color: lightgray;
+    box-shadow: black;
+    height: 25px;
+    width: 100px;
+}
+
+.flex-container-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(80, 127, 255);
+    width: 100%;
+
+}
+
+.flex-container{
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    width: 200px;
+    margin: 20px;
+}
+
+
+.flex-container li{
+background-color: rgb(80, 127, 255);
+    list-style: none;
+    border: solid 1px black;
+    margin: 5px;
+    padding: 10px;
+    color: white;
+}
+
+#footer{
+    background-color: rgb(2, 2, 143);
+        width: 100px;
+        
+        
+    }
+.footer{
+    background-color: rgb(2, 2, 143);
+    justify-content: center;
+    padding-top: 13px;
+    padding-left: 13px;
+}
