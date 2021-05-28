@@ -21,7 +21,7 @@ let radio_perdidos = document.getElementById("radio-perdidos");
 let elementosRadio = document.getElementsByClassName("clase-radio");
 let inputBuscador = document.getElementById("filtro");
 
-let iniciar = function () {
+let botonPulsado = function () {
     let equipo = inputBuscador.value;
     let partidos = obtenerPartidos(equipo);
     console.log(partidos);
