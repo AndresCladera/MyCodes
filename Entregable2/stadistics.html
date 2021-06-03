@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <title>Document</title>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -29,57 +31,48 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./standings.html">Clasificación</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./stadistics.html">Estadísticas</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <div class="body-container">
-    <div>
-        <h1>Estadísticas</h1>
-    </div>
-    <div class="table-container">
-        <h1>Equipos con mayor promedio de goles</h1>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Escudo</th>
-                    <th>Club</th>
-                    <th>GF</th>
-                    <th>PJ</th>
-                    <th>Promedio  GF</th>
-                </tr>
-            </thead>
-            <tbody id="table-body"></tbody>
-        </table>
 
-    </div>
-  
-    <div class="table-container">
-        <h1>Equipos con mayor promedio de goles en contra</h1>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Escudo</th>
-                    <th>Club</th>
-                    <th>GC</th>
-                    <th>PJ</th>
-                    <th>Promedio  GC</th>
-                </tr>
-            </thead>
-            <tbody id="table-body2"></tbody>
-        </table>
+        <div class="logo-liga">
+            <img src="./images/laliga.png" alt="La liga" width="150px">
+        </div>
 
-    </div>
+        <div>
+            <h1 class="h1-details">Equipos con mayor promedio de goles</h1>
+        </div>
+
+        <div class="table-container">
+            
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Escudo</th>
+                        <th>Club</th>
+                        <th>Promedio GF</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+
+        </div>
 
 
 
 
-    <script src="./apijs/standings.js"></script>
-    <script src="./apijs/stadistics.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script>
-   
+        <script src="./apijs/standings.js"></script>
+        <script src="./apijs/stadistics.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"></script>
+
 </body>
+
 </html>

@@ -1,27 +1,25 @@
-let clasificacion = standings.standings[0].table;
-// console.log(clasificacion);
+// let clasificacion = standings.standings[0].table;
 
 let imgDraw = "./images/draw.jpg";
 let imgLose = "./images/lose.jpg";
 let imgWin = "./images/win.jpg";
-
-// for (let i = 0; i < standing.length; i++) {
-//     let form = standing[i].form;
-//     console.log(form);
-//     let formString = form.split(",");
-//     let formIcons = [];
-//     for (let i = 0; i < formString.length; i++) {
-//         if (formString[i] == "W") {
-//             formIcons.push(imgWin);
-//         } else if (formString[i] == "D") {
-//             formIcons.push(imgDraw);
-//         } else if (formString[i] == "L") {
-//             formIcons.push(imgLose);
-//         }
-//     }
-// }
-
 let tbody = document.getElementById("table-body");
+
+let rankingUrl =
+    "http://api.football-data.org/v2/competitions/2014/standings";
+
+fetch(rankingUrl, {
+    method: "GET",
+    headers: {
+        "X-Auth-Token": "f4db1fef6dcb4d3494491b461a6c076e",
+    }
+})
+    .then((response) => response.json())
+    .then((data) => {
+        let clasificacion = data.standings[0].table;
+        init(clasificacion);
+    })
+
 function init(standing) {
     for (let i = 0; i < standing.length; i++) {
         // console.log(standing[i]);
@@ -42,9 +40,7 @@ function init(standing) {
 
     }
 }
-init(clasificacion);
 
-function lanzamiento(liquido) {
-    console.log(`has lanzado un recipiente lleno de ${liquido}`);
-}
-lanzamiento("cerveza");
+
+
+

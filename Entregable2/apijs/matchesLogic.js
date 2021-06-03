@@ -2,18 +2,6 @@ let matchTotales = matches.matches;
 
 let partidosTotales = document.getElementById("table-body");
 
-// for (let i = 0; i < matchTotales.length; i++) {
-//     // console.log(matchTotales[i].awayTeam.name);
-//     let result = `${matchTotales[i].score.fullTime.homeTeam} - ${matchTotales[i].score.fullTime.awayTeam}`;
-//     let homeT = `${matchTotales[i].homeTeam.name}`;
-//     let awayT = `${matchTotales[i].awayTeam.name}`;
-//     let tr = document.createElement("tr");
-//     tr.innerHTML = [`<td>${homeT}</td>
-// <td>${result}</td>
-// <td>${awayT}</td>`];
-//     partidosTotales.appendChild(tr)
-
-// };
 
 let radio_ganados = document.getElementById("radio-ganados");
 let radio_empatados = document.getElementById("radio-empatados");
